@@ -22,6 +22,9 @@ body {
     -webkit-text-stroke: 1px #3466af;
     letter-spacing: 3px;
     text-shadow: -3px 2px #1d2c5e;
+    text-align: center;
+    font-size: 3rem;
+    
 }
 
 @media screen and (min-width: 992px) {

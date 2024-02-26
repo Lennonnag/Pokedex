@@ -1,17 +1,88 @@
 .pokemons {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     list-style: none;
     padding: 0;
+}
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
 }
 
 .pokemon {
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
-    padding: .5rem;
-    background-color: #49D0B0;
+    padding: .5rem;  
     border-radius: 0.5rem;
 }
 
@@ -19,6 +90,8 @@
     color: white;
     font-weight: 900;
     margin-bottom: 0.25rem;
+    text-transform: capitalize;
+    -webkit-text-stroke: 1px black;
 }
 
 .pokemon .number {
@@ -42,8 +115,7 @@
     list-style: none;
 }
 
-.pokemon .detail .types .type {
-    background-color: #61e1ca;
+.pokemon .detail .types .type {   
     font-weight: 400;
     padding: .2rem 0.3rem;
     margin: .25rem;
@@ -51,6 +123,7 @@
     font-size: .625rem;
     text-align: center;
     color: white;
+    filter:brightness(1.1)
 }
 
 .pokemon .detail img {
@@ -60,7 +133,7 @@
 }
 
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 331px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
